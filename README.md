@@ -7,6 +7,8 @@ an old README, a Telegram bot, a GitHub commit, credits in a repository, or some
 
 This account now exists only to preserve the username and redirect people to my new profile.
 
+![](https://visitor-badge.laobi.icu/badge?page_id=AASFCYBERKING)
+
 </div>
 
 ---
