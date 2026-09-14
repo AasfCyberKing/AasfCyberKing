@@ -1,0 +1,55 @@
+name: Sync "Now Working On" from MKishoreDev
+
+# This is the active account's activity, mirrored here so visitors
+# who land on this legacy profile can see what's currently being
+# built without needing to click through. Runs daily and on demand.
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # daily at 07:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  SOURCE_USERNAME: MKishoreDev
+
+jobs:
+  sync-activity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch recently updated public repos
+        id: fetch
+        run: |
+          repos=$(curl -s "https://api.github.com/users/${SOURCE_USERNAME}/repos?sort=updated&per_page=5" \
+            | jq -r '.[] | select(.fork == false) | "- **[\(.name)](\(.html_url))** — \(.description // "no description") `\(.language // "—")`"')
+          {
+            echo "list<<EOF"
+            echo "$repos"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Update README between markers
+        run: |
+          {
+            echo "<!-- ACTIVITY:START -->"
+            echo "${{ steps.fetch.outputs.list }}"
+            echo ""
+            echo "_Last synced: $(date -u '+%Y-%m-%d %H:%M UTC')_"
+            echo "<!-- ACTIVITY:END -->"
+          } > activity_block.md
+
+          awk '
+            /<!-- ACTIVITY:START -->/ {print_block=1; while ((getline line < "activity_block.md") > 0) print line; }
+            /<!-- ACTIVITY:END -->/ {print_block=0; next}
+            !print_block {print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit changes if anything updated
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync latest activity from MKishoreDev"
+          file_pattern: README.md

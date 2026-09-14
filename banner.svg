@@ -1,0 +1,78 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="70%">
+      <stop offset="0%" stop-color="#1c0f33"/>
+      <stop offset="55%" stop-color="#0a0614"/>
+      <stop offset="100%" stop-color="#030204"/>
+    </radialGradient>
+
+    <radialGradient id="glow" cx="50%" cy="16%" r="30%">
+      <stop offset="0%" stop-color="#c9a8ff" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#8a5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8a5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="wordmark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f3ecff"/>
+      <stop offset="55%" stop-color="#c9a6ff"/>
+      <stop offset="100%" stop-color="#8a5cf6"/>
+    </linearGradient>
+
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <g id="ornament">
+      <path d="M0,66 C6,34 22,16 52,10 C78,5 92,-8 98,-40" fill="none" stroke="#8a76c9" stroke-width="1.1" opacity="0.55"/>
+      <path d="M14,48 C22,34 38,28 52,10" fill="none" stroke="#8a76c9" stroke-width="0.8" opacity="0.4"/>
+      <ellipse cx="34" cy="26" rx="7" ry="3.4" fill="#a68be0" opacity="0.45" transform="rotate(-35 34 26)"/>
+      <ellipse cx="62" cy="6" rx="6" ry="3" fill="#a68be0" opacity="0.4" transform="rotate(-8 62 6)"/>
+      <ellipse cx="86" cy="-22" rx="5.5" ry="2.8" fill="#a68be0" opacity="0.4" transform="rotate(24 86 -22)"/>
+      <circle cx="98" cy="-40" r="2.2" fill="#c9a6ff" opacity="0.7"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#glow)"/>
+
+  <!-- mirrored corner ornaments -->
+  <use href="#ornament" transform="translate(26,28)"/>
+  <use href="#ornament" transform="translate(1174,28) scale(-1,1)"/>
+  <use href="#ornament" transform="translate(26,292) scale(1,-1)"/>
+  <use href="#ornament" transform="translate(1174,292) scale(-1,-1)"/>
+
+  <!-- sunburst emblem -->
+  <g transform="translate(600,54)">
+    <g stroke="#c9b8e8" stroke-width="1" opacity="0.55">
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(0)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(30)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(60)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(90)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(120)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(150)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(180)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(210)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(240)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(270)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(300)"/>
+      <line x1="0" y1="-30" x2="0" y2="-42" transform="rotate(330)"/>
+    </g>
+    <circle r="21" fill="#0a0614" stroke="#a68be0" stroke-width="1" opacity="0.9"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="url(#wordmark)">M</text>
+  </g>
+
+  <!-- poetic caption -->
+  <text x="600" y="122" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="15" letter-spacing="1" fill="#c9b8e8">still known as AASFCYBERKING</text>
+
+  <!-- wordmark -->
+  <text x="600" y="205" text-anchor="middle" font-family="'Segoe UI', Georgia, serif" font-weight="700" font-size="68" letter-spacing="1" fill="url(#wordmark)" filter="url(#glow)">MKishoreDev</text>
+
+  <!-- underline flourish -->
+  <path d="M380,224 Q600,244 820,224" fill="none" stroke="#a97fff" stroke-width="1" opacity="0.6"/>
+
+  <text x="600" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="12" letter-spacing="3.5" fill="#8a76ad">ARCHIVED&#160;GITHUB&#160;ACCOUNT&#160;·&#160;REDIRECTS&#160;HERE</text>
+</svg>
