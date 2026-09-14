@@ -1,39 +1,51 @@
 <div align="center">
 
-# 👋 Looking for AASFCYBERKING?
+<img src="./banner.svg" alt="AASFCYBERKING → MKishoreDev" width="100%"/>
 
-You probably found this username from:
-an old README, a Telegram bot, a GitHub commit, credits in a repository, or somewhere on the internet from years ago.
+<br/>
 
-This account now exists only to preserve the username and redirect people to my new profile.
-
-![](https://visitor-badge.laobi.icu/badge?page_id=AASFCYBERKING)
+<img src="https://img.shields.io/badge/status-archived-1c0f33?style=for-the-badge&labelColor=0a0614">
+<img src="https://img.shields.io/badge/active_account-MKishoreDev-8a5cf6?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0614">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=AASFCYBERKING&style=for-the-badge&color=8a5cf6">
 
 </div>
 
----
+<br/>
 
-## ⚠️ Archive Notice
+> *behind the name you remember, the work simply moved on —*
+> *still the same hands, just a different page.*
 
-All original repositories from this account were deleted long ago.
+If you found this username from an old README, a Telegram bot, a commit, or credits somewhere — this account is retired. It only exists to preserve the name and point you to where I'm actually active. All original repositories here were deleted a while ago, so there's nothing else to see on this profile itself.
 
-This profile no longer hosts active projects, repositories, or development work.
+<br/>
 
----
+## 🜸 Archived GitHub account of [@MKishoreDev](https://github.com/MKishoreDev)
 
-## 🚀 New Account
+All active projects, repositories, and updates have moved to:
 
-Development continues here:
+<div align="center">
 
-# 👉 https://github.com/MKishoreDev
+<a href="https://github.com/MKishoreDev"><img src="https://img.shields.io/badge/GitHub-MKishoreDev-8a5cf6?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0614"></a>
+<a href="https://mkishore.is-a.dev"><img src="https://img.shields.io/badge/Website-mkishore.is--a.dev-8a5cf6?style=for-the-badge&logo=firefox&logoColor=white&labelColor=0a0614"></a>
+<a href="https://k4issz.luv"><img src="https://img.shields.io/badge/Link-k4issz.luv-8a5cf6?style=for-the-badge&logo=linktree&logoColor=white&labelColor=0a0614"></a>
+<br/>
+<a href="https://www.telegram.me/KishoreDxD"><img src="https://img.shields.io/badge/Telegram-KishoreDxD-8a5cf6?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0a0614"></a>
+<a href="https://www.linkedin.com/in/kishore-m-dev"><img src="https://img.shields.io/badge/LinkedIn-kishore--m--dev-8a5cf6?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0614"></a>
 
-If you knew me as **AASFCYBERKING**, **Aasf**, or **Kishore**, feel free to reconnect through the new account.
+</div>
+
+<br/>
+
+## Currently working on
+
+<!-- ACTIVITY:START -->
+_synced automatically from [@MKishoreDev](https://github.com/MKishoreDev)_
+<!-- ACTIVITY:END -->
+
+<br/>
 
 ---
 
 <div align="center">
-
-<img src="https://img.shields.io/badge/STATUS-LEGACY_ACCOUNT-red?style=for-the-badge">
-<img src="https://img.shields.io/badge/MOVED-@MKishoreDev-blue?style=for-the-badge&logo=github">
-
+<sub>Previously known as <code>AASFCYBERKING</code>, <code>Aasf</code>, or <code>Kishore</code> — reconnect through the profile above.</sub>
 </div>
